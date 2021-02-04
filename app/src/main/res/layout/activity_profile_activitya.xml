@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivitya">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/profile_pic_image"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_height="match_parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Hello"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/profile_text_name"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card3"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@+id/card2">
+
+        <TextView
+            android:id="@+id/PROF_EMAIL"
+            android:layout_width="match_parent"
+            android:text="email"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_height="50dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card2"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@+id/card1">
+
+        <TextView
+            android:id="@+id/PROF_NAME"
+            android:layout_width="match_parent"
+            android:text="name"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_height="50dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:layout_above="@id/note_text"
+        android:layout_alignParentRight="true"
+        android:id="@+id/logout_app"
+        android:layout_marginRight="20dp"/>
+
+
+    <TextView
+        android:id="@+id/note_text"
+        android:layout_above="@id/bottom_navh_prof"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This app is made based on the karunya university timings..."
+        android:layout_marginBottom="5dp"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navh_prof"
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+
+</RelativeLayout>

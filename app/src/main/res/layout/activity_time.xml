@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimeActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Day"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/tt_dayy"/>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/tt_dayy"
+        android:id="@+id/recyclartt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/btngrp"/>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floatadd"
+        android:layout_above="@+id/btngrp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_add_24"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_above="@+id/bottom_navh2"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btngrp">
+
+       <HorizontalScrollView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_gravity="center">
+               <Button
+                   android:layout_width="70dp"
+                   android:layout_height="wrap_content"
+                   android:text="MO"
+                   android:layout_marginRight="10dp"
+                   android:id="@+id/mon"/>
+               <Button
+                   android:layout_width="70dp"
+                   android:layout_height="wrap_content"
+                   android:text="TU"
+                   android:layout_marginRight="10dp"
+                   android:id="@+id/tue"/>
+               <Button
+                   android:layout_width="70dp"
+                   android:layout_height="wrap_content"
+                   android:text="WE"
+                   android:layout_marginRight="10dp"
+                   android:id="@+id/wed"/>
+               <Button
+                   android:layout_width="70dp"
+                   android:layout_height="wrap_content"
+                   android:text="TH"
+                   android:layout_marginRight="10dp"
+                   android:id="@+id/thu"/>
+               <Button
+                   android:layout_width="70dp"
+                   android:layout_height="wrap_content"
+                   android:text="FR"
+                   android:id="@+id/fri"/>
+           </LinearLayout>
+       </HorizontalScrollView>
+
+    </LinearLayout>
+
+
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navh2"
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>

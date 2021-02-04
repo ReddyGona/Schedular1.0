@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TaskActivity">
+
+    <TextView
+        android:id="@+id/taskk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/acme"
+        android:text="TASK"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_margin="20dp"
+        android:layout_above="@+id/bottom_navh3"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/taskk"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclartask"/>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/floattaskadd"
+        android:layout_above="@+id/bottom_navh3"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_add_24"
+        />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navh3"
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

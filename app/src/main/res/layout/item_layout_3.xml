@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:backgroundTint="#00B0FF"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:id="@+id/card_exam">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="3.5dp"
+        android:background="#FBFBFB">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="web technology"
+            android:textSize="23dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/EXAM_TITLE"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dbay"
+            android:textSize="23dp"
+            android:background="#665A585A"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/EXAM_SEAT"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF00B0FF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Day"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:id="@+id/EXAM_DAY"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/EXAM_DATE"/>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/EXAM_TIME"/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="FN"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/EXAM_SESS"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
